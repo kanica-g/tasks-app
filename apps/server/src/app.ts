@@ -1,5 +1,8 @@
 import express from 'express';
 import { tasksRouter } from './modules/tasks/task.routes';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
