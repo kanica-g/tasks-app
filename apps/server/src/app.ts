@@ -8,13 +8,23 @@ dotenv.config();
 const app: Express = express();
 
 const allowedOrigins = [
-    "https://tasks-ui.herokuapp.com",
-    "http://localhost:5173", // for local dev
+    "http://localhost:5173",
+    "https://tasks-react-app-teq7.onrender.com",
 ];
 
-app.use(cors({
-    origin: allowedOrigins
-}));
+app.use(
+    cors({
+        origin: (origin, callback) => {
+            if (!origin || allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error("Not allowed by CORS"));
+            }
+        },
+        methods: ["GET", "POST", "PATCH", "DELETE"],
+        credentials: true,
+    })
+);
 
 // Apply middlewares
 app.use(express.json())
