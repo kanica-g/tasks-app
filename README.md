@@ -27,8 +27,10 @@ Deployed and always online via Render.
 
 ## Project Structure
 
+```
 tasks-app/
 ├── apps/
-│ ├── client/ → React + Tailwind UI
-│ └── server/ → Express API + drizzle ORM
+│   ├── client/ → React + Tailwind UI
+│   └── server/ → Express API + drizzle ORM
 ├── pnpm-workspace.yaml
+```
