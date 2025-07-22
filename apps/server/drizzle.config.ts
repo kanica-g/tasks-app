@@ -5,6 +5,6 @@ export default defineConfig({
     schema: "./src/db/schema.ts",
     out: "./drizzle",
     dbCredentials: {
-        url: "postgres://kanica@localhost:6200/tasksdb",
+        url: process.env.DATABASE_URL!
     }
 });
