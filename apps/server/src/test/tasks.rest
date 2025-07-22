@@ -1,12 +1,12 @@
 GET http://localhost:3000/api/v1/tasks
 
 ###
-
+# @prompt title
 POST http://localhost:3000/api/v1/tasks
 Content-Type: application/json
 
 {
-    "title": "task 1" 
+    "title": "{{title}}"
 }
 
 ###
