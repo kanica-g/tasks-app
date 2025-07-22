@@ -1,6 +1,6 @@
 # tasks-app
 
-A simple full-stack task manager built with React, Express, and PostgreSQL.  
+A full-stack task manager built with React, Express, and PostgreSQL.  
 Deployed and always online via Render.
 
 **Live App**: [https://tasks-react-app-teq7.onrender.com](https://tasks-react-app-teq7.onrender.com)
