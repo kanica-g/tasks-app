@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Express } from 'express';
 import { tasksRouter } from './modules/tasks/task.routes';
 import dotenv from "dotenv";
 import cors from "cors";
 
 dotenv.config();
 
-const app = express();
+const app: Express = express();
 
 const allowedOrigins = [
     "https://tasks-ui.herokuapp.com",
